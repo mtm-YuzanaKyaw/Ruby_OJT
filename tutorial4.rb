@@ -13,21 +13,9 @@ while i < size
     i += 1 
     
 end
-duplicate = []
-while size > -1
-    
-    (1..size).each do |j|
-      if(animal_names[j-1] == animal_names[j])
-          next
-      else 
-        duplicate = animal_names[j]
-      end
-    end
-    puts animal_names[size]
-    size -= 1
-end
+unique_names = animal_names.uniq
 
-
-puts duplicate
+puts "Reverse array"
+puts unique_names.reverse
 
 
